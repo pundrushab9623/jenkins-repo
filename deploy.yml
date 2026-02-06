@@ -21,8 +21,4 @@
         dest: /var/www/html/index.html
         mode: '0644'
 
-    - name: Copy error.html
-      copy:
-        src: "{{ lookup('env','WORKSPACE') }}/html-repo/error.html"
-        dest: /var/www/html/error.html
-        mode: '0644'
+    
